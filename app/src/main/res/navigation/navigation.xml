@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/startScreenFragment"
+        android:name="it.dikbudsit.stb.myappkey.ui.startScreen.StartScreenFragment"
+        android:label="start_screen_fragment"
+        tools:layout="@layout/start_screen_fragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="it.dikbudsit.stb.myappkey.ui.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/inputCodeFragment"
+        android:name="it.dikbudsit.stb.myappkey.ui.inputCodeFragment.InputCodeFragment"
+        android:label="input_code_fragment"
+        tools:layout="@layout/input_code_fragment" />
+</navigation>

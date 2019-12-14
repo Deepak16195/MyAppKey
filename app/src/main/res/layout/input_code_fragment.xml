@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.inputCodeFragment.InputCodeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="App Name"
+                android:id="@+id/nama_app"
+                android:singleLine="true"
+                android:layout_marginBottom="16dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="key"
+                android:id="@+id/key"
+                android:singleLine="true"
+                android:layout_marginBottom="16dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/pwd"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Simpan"
+                android:layout_gravity="end"
+                android:layout_marginTop="16dp"
+                android:id="@+id/save"/>
+
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>

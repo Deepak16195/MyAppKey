@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="data"
+            type="it.dikbudsit.stb.myappkey.room.Note"/>
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{data.nmApp}"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{data.key}"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="?actionBarSize"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                    android:id="@+id/texpasw"
+                    android:gravity="center_vertical"
+                    android:clickable="true"
+                    android:text="@{data.pwd}" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:id="@+id/update"
+                    android:text="update"/>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="16dp"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:id="@+id/delete"
+                    android:text="delete"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
